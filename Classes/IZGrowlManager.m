@@ -29,6 +29,10 @@
 
 #import "IZGrowlManager.h"
 
+#define kTitleLabelTag 1
+#define kDescriptionLabelTag 2
+#define kImageViewTag 3
+
 #pragma mark -
 #pragma mark IZGrowlNotification
 
@@ -93,7 +97,7 @@
 		self.notification = theNotification;
 		self.positionIndex = nil;
 		
-		UIImage *closeButtonImage = [UIImage imageNamed:@"growl-close-button.png"];
+		UIImage *closeButtonImage = [UIImage imageNamed:@"growl-close-button"];
 		// Because the image is too little (24x24) the user won't be able to tap on this button. Let's make it have a bigger (40x40) frame.
 		CGRect closeButtonFrame = CGRectMake(0, 0, 40, 40); 
 		closeButtonFrame.origin.x = 18-20;
@@ -102,9 +106,27 @@
 		[closeButton setImage:closeButtonImage forState:UIControlStateNormal];
 		[closeButton addTarget:self action:@selector(tappedCloseButton:) forControlEvents:UIControlEventTouchUpInside];
 		[self addSubview:closeButton];
-		[closeButton release];		
+		[closeButton release];
+		
+		[self.notification addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew context:nil];
 	}
 	return self;
+}
+
+- (void)setNotification:(IZGrowlNotification *)aNotification
+{
+	if (self.notification != aNotification)
+	{
+		[self willChangeValueForKey:@"notification"];
+		
+		[notification removeObserver:self forKeyPath:@"image"];
+		[notification release], notification = nil;
+				
+		notification = [aNotification retain];
+		[notification addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew context:nil];		
+		
+		[self didChangeValueForKey:@"notification"];
+	}
 }
 
 - (void)tappedCloseButton:(id)sender
@@ -115,10 +137,30 @@
 
 - (void)dealloc
 {
-	self.notification = nil;
+	[self.notification removeObserver:self forKeyPath:@"image"];
+	[notification release], notification = nil;
 	self.positionIndex = nil;
 	self.delegate = nil;
 	[super dealloc];
+}
+
+// This gets called automatically whenever the 'location' property of a Contact changes.
+- (void)observeValueForKeyPath:(NSString *)keyPath
+					  ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context
+{
+    if ([keyPath isEqual:@"image"]) 
+	{
+		id newValue = [change objectForKey:NSKeyValueChangeNewKey];		
+		if (newValue != [NSNull null] && 
+			[newValue isKindOfClass:[UIImage class]])
+		{
+			UIImageView *imageView = (UIImageView *)[self viewWithTag:kImageViewTag];
+			if (imageView)
+				imageView.image = newValue;
+		}
+	}
 }
 
 @end
@@ -128,12 +170,13 @@
 
 #define kDefaultFadeInTime 0.1
 #define kDefaultFadeOutTime 0.1
-#define kDefaultDisplayTime 3
+#define kDefaultDisplayTime 6
 #define kMaxDisplayedNotifications 3
 
 @implementation IZGrowlManager
 
-@synthesize window;
+//@synthesize window;
+@synthesize view;
 @synthesize fadeInTime;
 @synthesize fadeOutTime;
 @synthesize displayTime;
@@ -192,6 +235,23 @@ static IZGrowlManager *sharedManager = nil;
     return self;
 }
 
+#define kButtonWidth 244
+#define kButtonHeight 75
+#define kDistanceBetweenNotificationBubbles 5
+
+- (void)layoutNotificationButton:(IZGrowlNotificationButton *)button
+{
+	NSNumber *position = button.positionIndex;
+	
+	CGRect rect = CGRectMake(0, 0, kButtonWidth, kButtonHeight);
+	CGPoint origin;
+	origin.x = self.view.bounds.size.width-rect.size.width+offset.x;
+	origin.y = self.view.bounds.size.height+offset.y-([position intValue]+1)*(rect.size.height+kDistanceBetweenNotificationBubbles);
+	rect.origin = origin;
+	
+	button.frame = rect;
+}
+
 - (id)init
 {
 	if (self = [super init])
@@ -200,52 +260,72 @@ static IZGrowlManager *sharedManager = nil;
 		self.fadeOutTime = kDefaultFadeOutTime;
 		self.displayTime = kDefaultDisplayTime;
 		self.offset = CGPointMake(-5, -41);
-		self.window = [[UIApplication sharedApplication] keyWindow]; // By default use the current keyWindow of the application
 		
 		displayedNotifications = 0;
 		
 		reuseableButtons = [[NSMutableSet alloc] init];		
 		notificationQueue = [[NSMutableArray alloc] init];		
 		occupiedPositions = [[NSMutableSet alloc] init];
+		buttons = [[NSMutableSet alloc] init];
 		
+		// Register for relevant notifications
 		[[NSNotificationCenter defaultCenter] addObserver:self
-												 selector:@selector(didReceiveUIApplicationDidReceiveMemoryWarningNotification:)
+												 selector:@selector(applicationDidReceiveMemoryWarningNotification:)
 													 name:UIApplicationDidReceiveMemoryWarningNotification object:nil];		
+		
+		[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];		  
+		[[NSNotificationCenter defaultCenter] addObserver:self 
+												 selector:@selector(deviceOrientationDidChangeNotification:)
+                                                    name:UIDeviceOrientationDidChangeNotification object:nil];
 	}
 	return self;
 }
 
 - (void)dealloc
 {
-	self.window = nil;
-	[reuseableButtons release];
-	[notificationQueue release];
-	[occupiedPositions release];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];	
+	self.view = nil;
+	[reuseableButtons release], reuseableButtons = nil;
+	[notificationQueue release], notificationQueue = nil;
+	[occupiedPositions release], occupiedPositions = nil;
+	[buttons release], buttons = nil;
 	[super dealloc];
 }
 
-- (void)didReceiveUIApplicationDidReceiveMemoryWarningNotification:(NSNotification *)info
+#pragma mark -
+#pragma mark Notifications
+
+- (void)applicationDidReceiveMemoryWarningNotification:(NSNotification *)info
 {
 	[reuseableButtons removeAllObjects];
 }
 
-#define kTitleLabelTag 1
-#define kDescriptionLabelTag 2
-#define kImageViewTag 3
+- (void)deviceOrientationDidChangeNotification:(NSNotification *)info
+{
+	// Do nothing if the new device orientation is not a valid interface orientation
+	UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+	if (UIDeviceOrientationIsValidInterfaceOrientation(orientation) == NO)
+		return;
+	
+	for (IZGrowlNotificationButton *button in buttons)
+	{
+		[self layoutNotificationButton:button];
+	}
+}
 
-#define kButtonWidth 244
-#define kButtonHeight 75
+#pragma mark -
 
 - (IZGrowlNotificationButton *)constructButton
 {
 	IZGrowlNotificationButton *button = [[IZGrowlNotificationButton alloc] initWithFrame:CGRectMake(0, 0, kButtonWidth, kButtonHeight) notification:nil];
+	button.contentMode = UIViewContentModeBottomRight;
 	button.delegate = self; // To receive message when the X button is tapped
 	
-	UIImage *normalBackgroundImage = [UIImage imageNamed:@"growl-box.png"];
+	UIImage *normalBackgroundImage = [UIImage imageNamed:@"growl-box"];
 	normalBackgroundImage = [normalBackgroundImage stretchableImageWithLeftCapWidth:normalBackgroundImage.size.width/2 topCapHeight:normalBackgroundImage.size.height/2];
 	[button setBackgroundImage:normalBackgroundImage forState:UIControlStateNormal];
 	
-	UIImage *highlightedBackgroundImage = [UIImage imageNamed:@"growl-box-highlighted.png"];
+	UIImage *highlightedBackgroundImage = [UIImage imageNamed:@"growl-box-highlighted"];
 	highlightedBackgroundImage = [highlightedBackgroundImage stretchableImageWithLeftCapWidth:highlightedBackgroundImage.size.width/2 topCapHeight:highlightedBackgroundImage.size.height/2];
 	[button setBackgroundImage:highlightedBackgroundImage forState:UIControlStateHighlighted];
 	
@@ -352,30 +432,35 @@ static IZGrowlManager *sharedManager = nil;
 
 	// Now display the notification to the user
 	[occupiedPositions addObject:position];
-	CGRect rect = button.frame;
-#define kDistanceBetweenNotificationBubbles 5
-	rect.origin.x = self.window.bounds.size.width-rect.size.width+offset.x;
-	rect.origin.y = self.window.bounds.size.height+offset.y-([position intValue]+1)*(rect.size.height+kDistanceBetweenNotificationBubbles);
-	button.frame = rect;
+	
 	button.positionIndex = position;
-	
+	[self layoutNotificationButton:button];
 	button.alpha = 0.;
-	[self.window addSubview:button];
-	
-	[UIView beginAnimations:@"fadeInAnimation" context:nil];
-	[UIView setAnimationDuration:self.fadeInTime];
-	button.alpha = 1.;
-	[UIView commitAnimations];
+	[self.view addSubview:button];
+	[buttons addObject:button];
+		
+	[UIView animateWithDuration:self.fadeInTime
+			  delay:0 								
+			options:UIViewAnimationOptionAllowUserInteraction // Allow user interaction, so if user scrolls then the scrolling won't be blocked by this fading animation
+		 animations:^
+	 {
+		 button.alpha = 1.;
+	 }
+		 completion:NULL];
 	
 	[self performSelector:@selector(fadeOutButton:) withObject:button afterDelay:self.fadeInTime+self.displayTime];
 }
 
 - (void)fadeOutButton:(IZGrowlNotificationButton *)button
-{
-	[UIView beginAnimations:@"fadeOutAnimation" context:nil];
-	[UIView setAnimationDuration:self.fadeOutTime];
-	button.alpha = 0.;
-	[UIView commitAnimations];
+{	
+	[UIView animateWithDuration:self.fadeOutTime
+			  delay:0 								
+			options:UIViewAnimationOptionAllowUserInteraction // Allow user interaction, so if user scrolls then the scrolling won't be blocked by this fading animation
+		 animations:^
+	 {
+		 button.alpha = 0.;
+	 }
+		 completion:NULL];
 	
 	[self performSelector:@selector(removeButton:) withObject:button afterDelay:self.fadeOutTime];
 }
@@ -387,6 +472,7 @@ static IZGrowlManager *sharedManager = nil;
 	[occupiedPositions removeObject:button.positionIndex];
 	[reuseableButtons addObject:button];
 	[button removeFromSuperview];
+	[buttons removeObject:button];
 	
 	// Post another notification if it is in our queue
 	if ([notificationQueue count] > 0)

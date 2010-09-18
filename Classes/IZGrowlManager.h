@@ -65,21 +65,24 @@
 @end
 
 @interface IZGrowlManager : NSObject <IZGrowlNotificationButtonDelegate> {
-	UIWindow				*window;
+	UIWindow				*view;
 	NSTimeInterval			fadeInTime;
 	NSTimeInterval			fadeOutTime;
 	NSTimeInterval			displayTime;
 	CGPoint					offset;
 	NSInteger				displayedNotifications;
 	
+	CGAffineTransform		transform;
+	
 	NSMutableSet			*reuseableButtons;
 	NSMutableArray			*notificationQueue;
 	NSMutableSet			*occupiedPositions;
+	NSMutableSet			*buttons;
 }
 
 + (IZGrowlManager *)sharedManager;
 
-@property(nonatomic, retain) UIWindow *window; // The window in which to display the Growl notifications. Default [[UIApplication sharedApplication] keyWindow]
+@property(nonatomic, retain) UIView *view; // The view where to add the notification bubbles
 @property(nonatomic, assign) NSTimeInterval fadeInTime; // Default value 0.1
 @property(nonatomic, assign) NSTimeInterval fadeOutTime; // Default value 0.1
 @property(nonatomic, assign) NSTimeInterval displayTime; // Default value 3

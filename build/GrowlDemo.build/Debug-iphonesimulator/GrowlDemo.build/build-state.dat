@@ -1,22 +1,23 @@
 TGrowlDemo
 v7
 r0
-t279183645.538586
+t306523359.966498
 cCheck dependencies
-cProcessInfoPlistFile /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist GrowlDemo-Info.plist
-cCompileXIB /Users/zsombor/Documents/dev/GrowlDemo/MainWindow.xib
-cCompileXIB /Users/zsombor/Documents/dev/GrowlDemo/GrowlDemoViewController.xib
+cProcessInfoPlistFile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist GrowlDemo-Info.plist
+cCompileXIB /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib
+cCompileXIB /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib
 cCpResource build/Debug-iphonesimulator/GrowlDemo.app/growl-close-button.png growl-close-button.png
 cCpResource build/Debug-iphonesimulator/GrowlDemo.app/growl-box.png growl-box.png
 cCpResource build/Debug-iphonesimulator/GrowlDemo.app/growl-box-highlighted.png growl-box-highlighted.png
-cProcessPCH /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch.gch GrowlDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o /Users/zsombor/Documents/dev/GrowlDemo/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o /Users/zsombor/Documents/dev/GrowlDemo/Classes/IZGrowlManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo normal i386
-cGenerateDSYMFile /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app.dSYM /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
-cTouch /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app
+cCpResource build/Debug-iphonesimulator/GrowlDemo.app/information-symbol.png information-symbol.png
+cProcessPCH /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch.gch GrowlDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo normal i386
+cGenerateDSYMFile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app.dSYM /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
+cTouch /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
 c000000004ACF213700000000000000EE
@@ -47,6 +48,36 @@ N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1
 c000000004ABDEEE200000000016721E0
 t1253961442
 s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
+c000000004C8A78C70000000000000110
+t1284143303
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A4DB60000000000295900
+t1280986550
+s2709760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A4DB0000000000029D580
+t1280986544
+s2741632
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A4DA10000000000001466
+t1280986529
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C6241ED00000000000009CD
+t1281507821
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C6242840000000001E228C0
+t1281507972
+s31598784
 
 N/Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoAppDelegate.h
 c000000004AF3C73900000000000001ED
@@ -185,18 +216,173 @@ t1257490233
 s365
 i<UIKit/UIKit.h>
 
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/../../../Dev/IZGrowlManager/IZGrowlManager/information-symbol.png
+c000000004C94F38C0000000000000E37
+t1284830092
+s3639
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.h
+c000000004C94F38C00000000000001ED
+t1284830092
+s493
+i<UIKit/UIKit.h>
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m
+c000000004C94F44F00000000000002B4
+t1284830287
+s692
+i"GrowlDemoAppDelegate.h"
+i"GrowlDemoViewController.h"
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.h
+c000000004C94F38C0000000000000159
+t1284830092
+s345
+i<UIKit/UIKit.h>
+i"IZGrowlManager.h"
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m
+c000000004C94F55D0000000000000904
+t1284830557
+s2308
+i"GrowlDemoViewController.h"
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.h
+c000000004C94F3E50000000000000E9B
+t1284830181
+s3739
+i<Foundation/Foundation.h>
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m
+c000000004C94F3E30000000000004123
+t1284830179
+s16675
+i"IZGrowlManager.h"
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib
+c000000004C94F38C000000000000467D
+t1284830092
+s18045
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemo_Prefix.pch
+c000000004C94F38C00000000000000BB
+t1284830092
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib
+c000000004C94F38C0000000000002464
+t1284830092
+s9316
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app
+t1284830559
+s374
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app.dSYM
+t1284830559
+s102
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
+t1284830559
+s46944
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemoViewController.nib
+t1284830512
+s2493
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist
+t1284830511
+s599
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/MainWindow.nib
+t1284830512
+s1654
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/PkgInfo
+t1284830511
+s8
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/growl-box-highlighted.png
+t1284830512
+s3620
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/growl-box.png
+t1284830512
+s3275
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/growl-close-button.png
+t1284830512
+s3814
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/information-symbol.png
+t1284830512
+s3915
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemo.LinkFileList
+c000000004C94F52F000000000000024D
+t1284830511
+s589
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o
+t1284830513
+s46708
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o
+t1284830559
+s42004
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o
+t1284830513
+s99136
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o
+t1284830513
+s6324
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box-highlighted.png
+c000000004C94F38C0000000000000E24
+t1284830092
+s3620
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box.png
+c000000004C94F38C0000000000000CCB
+t1284830092
+s3275
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-close-button.png
+c000000004C94F38C0000000000000EE6
+t1284830092
+s3814
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/information-symbol.png
+c000000004C29C7570000000000000F4B
+t1277806423
+s3915
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m
+c000000004C94F38C000000000000016D
+t1284830092
+s365
+i<UIKit/UIKit.h>
+
+N/var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch.gch
+t1284830512
+s15211536
+
 N/var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch.gch
 t1257490513
 s13034960
 
 NGrowlDemo-Info.plist
-c000000004AF3C739000000000000038D
-t1257490233
+c000000004C94F38C000000000000038D
+t1284830092
 s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies279183645#279183645#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies306523359#306523359#0(0"0(0#1#0"8893912672#0"0#
 
 CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s279183482.868062
@@ -211,6 +397,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoAppDelegate.m279183482#279183483#0(0"0(0#0#69"/Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoAppDelegate.m4300885448#1939"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator -I/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/include -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch -c /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoAppDelegate.m -o /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o0#
 
+CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306523312.969865
+e306523313.172070
+r1
+xCompileC
+xbuild/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m306523312#306523313#0(0"0(0#0#79"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m8895031936#2104"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/include -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch -c /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoAppDelegate.m -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoAppDelegate.o0#
+
 CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s279183645.158051
 e279183645.342138
@@ -223,6 +422,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoViewController.m279183645#279183645#0(0"0(0#0#72"/Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoViewController.m4300885448#1945"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator -I/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/include -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch -c /Users/zsombor/Documents/dev/GrowlDemo/Classes/GrowlDemoViewController.m -o /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o0#
+
+CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306523359.756790
+e306523359.915213
+r1
+xCompileC
+xbuild/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m306523359#306523359#0(0"0(0#0#82"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m8892482240#2110"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/include -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch -c /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/GrowlDemoViewController.m -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemoViewController.o0#
 
 CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o /Users/zsombor/Documents/dev/GrowlDemo/Classes/IZGrowlManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s279183314.220481
@@ -237,6 +449,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Users/zsombor/Documents/dev/GrowlDemo/Classes/IZGrowlManager.m279183314#279183314#0(0"0(0#0#63"/Users/zsombor/Documents/dev/GrowlDemo/Classes/IZGrowlManager.m4300885448#1927"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator -I/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/include -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch -c /Users/zsombor/Documents/dev/GrowlDemo/Classes/IZGrowlManager.m -o /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o0#
 
+CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306523313.172397
+e306523313.397013
+r1
+xCompileC
+xbuild/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m306523313#306523313#0(0"0(0#0#73"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m8856448704#2092"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/include -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch -c /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/Classes/IZGrowlManager.m -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/IZGrowlManager.o0#
+
 CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o /Users/zsombor/Documents/dev/GrowlDemo/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s279183313.997412
 e279183314.204601
@@ -249,6 +474,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@53"Compile /Users/zsombor/Documents/dev/GrowlDemo/main.m279183313#279183314#0(0"0(0#0#45"/Users/zsombor/Documents/dev/GrowlDemo/main.m4300885448#1899"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator -I/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/include -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch -c /Users/zsombor/Documents/dev/GrowlDemo/main.m -o /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o0#
+
+CCompileC build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306523312.967960
+e306523313.071601
+r1
+xCompileC
+xbuild/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m306523312#306523313#0(0"0(0#0#55"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m8897768224#2064"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/include -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -include /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch -c /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/main.m -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/main.o0#
 
 CCompileXIB /Users/zsombor/Documents/dev/GrowlDemo/GrowlDemoViewController.xib
 s279183343.978013
@@ -266,32 +504,60 @@ xCompileXIB
 x/Users/zsombor/Documents/dev/GrowlDemo/MainWindow.xib
 lSLF07#2@25"CompileXIB MainWindow.xib279183312#279183312#0(0"0(0#0#53"/Users/zsombor/Documents/dev/GrowlDemo/MainWindow.xib4300885448#484"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/MainWindow.nib /Users/zsombor/Documents/dev/GrowlDemo/MainWindow.xib0#
 
+CCompileXIB /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib
+s306523311.673233
+e306523312.259417
+r1
+xCompileXIB
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib
+lSLF07#2@38"CompileXIB GrowlDemoViewController.xib306523311#306523312#0(0"0(0#0#76"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib8885696320#628"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemoViewController.nib /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCompileXIB /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib
+s306523311.672188
+e306523312.200036
+r1
+xCompileXIB
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib306523311#306523312#0(0"0(0#0#63"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib8891302016#602"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/MainWindow.nib /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
 CCpResource build/Debug-iphonesimulator/GrowlDemo.app/growl-box-highlighted.png growl-box-highlighted.png
-s279183312.730916
-e279183312.751859
+s306523312.203550
+e306523312.216967
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/GrowlDemo.app/growl-box-highlighted.png
 xgrowl-box-highlighted.png
-lSLF07#2@30"Copy growl-box-highlighted.png279183312#279183312#0(0"0(0#0#64"/Users/zsombor/Documents/dev/GrowlDemo/growl-box-highlighted.png4300885448#471"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/Documents/dev/GrowlDemo/growl-box-highlighted.png /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app0#
+lSLF07#2@30"Copy growl-box-highlighted.png306523312#306523312#0(0"0(0#0#74"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box-highlighted.png8920138720#501"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box-highlighted.png /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app0#
 
 CCpResource build/Debug-iphonesimulator/GrowlDemo.app/growl-box.png growl-box.png
-s279183312.729860
-e279183312.751454
+s306523312.201323
+e306523312.217160
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/GrowlDemo.app/growl-box.png
 xgrowl-box.png
-lSLF07#2@18"Copy growl-box.png279183312#279183312#0(0"0(0#0#52"/Users/zsombor/Documents/dev/GrowlDemo/growl-box.png4300885448#459"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/Documents/dev/GrowlDemo/growl-box.png /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app0#
+lSLF07#2@18"Copy growl-box.png306523312#306523312#0(0"0(0#0#62"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box.png8931439616#489"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box.png /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app0#
 
 CCpResource build/Debug-iphonesimulator/GrowlDemo.app/growl-close-button.png growl-close-button.png
-s279183312.728123
-e279183312.751216
+s306523312.200132
+e306523312.218251
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/GrowlDemo.app/growl-close-button.png
 xgrowl-close-button.png
-lSLF07#2@27"Copy growl-close-button.png279183312#279183312#0(0"0(0#0#61"/Users/zsombor/Documents/dev/GrowlDemo/growl-close-button.png4300885448#468"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/Documents/dev/GrowlDemo/growl-close-button.png /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app0#
+lSLF07#2@27"Copy growl-close-button.png306523312#306523312#0(0"0(0#0#71"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-close-button.png8932149632#498"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-close-button.png /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app0#
+
+CCpResource build/Debug-iphonesimulator/GrowlDemo.app/information-symbol.png ../../../Dev/IZGrowlManager/IZGrowlManager/information-symbol.png
+r0
+
+CCpResource build/Debug-iphonesimulator/GrowlDemo.app/information-symbol.png information-symbol.png
+s306523312.205961
+e306523312.218398
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/GrowlDemo.app/information-symbol.png
+xinformation-symbol.png
+lSLF07#2@27"Copy information-symbol.png306523312#306523312#0(0"0(0#0#71"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/information-symbol.png8908891904#498"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/information-symbol.png /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app0#
 
 CGenerateDSYMFile /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app.dSYM /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
 s279183645.435992
@@ -301,6 +567,15 @@ xGenerateDSYMFile
 x/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app.dSYM
 x/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
 lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/GrowlDemo.app.dSYM build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo279183645#279183645#0(0"0(0#0#90"/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo4300885448#389"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo -o /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app.dSYM0#
+
+CGenerateDSYMFile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app.dSYM /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
+s306523359.944970
+e306523359.963654
+r1
+xGenerateDSYMFile
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app.dSYM
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/GrowlDemo.app.dSYM build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo306523359#306523359#0(0"0(0#0#100"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo8939988512#419"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app.dSYM0#
 
 CLd /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo normal i386
 s279183645.342246
@@ -312,6 +587,16 @@ xnormal
 xi386
 lSLF07#2@95"Link /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo279183645#279183645#0(0"0(0#0#0"4300885448#874"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator -F/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator -filelist /Users/zsombor/Documents/dev/GrowlDemo/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemo.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo0#
 
+CLd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo normal i386
+s306523359.915311
+e306523359.944866
+r1
+xLd
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo
+xnormal
+xi386
+lSLF07#2@105"Link /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo306523359#306523359#0(0"0(0#0#0"8968852544#960"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -F/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -filelist /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/Objects-normal/i386/GrowlDemo.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/GrowlDemo0#
+
 CProcessInfoPlistFile /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist GrowlDemo-Info.plist
 s279183312.196306
 e279183312.226710
@@ -320,6 +605,28 @@ xProcessInfoPlistFile
 x/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist
 xGrowlDemo-Info.plist
 lSLF07#2@28"Process GrowlDemo-Info.plist279183312#279183312#0(0"0(0#0#59"/Users/zsombor/Documents/dev/GrowlDemo/GrowlDemo-Info.plist4300885448#485"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility GrowlDemo-Info.plist -genpkginfo /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist GrowlDemo-Info.plist
+s306523311.668160
+e306523311.672094
+r1
+xProcessInfoPlistFile
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist
+xGrowlDemo-Info.plist
+lSLF07#2@28"Process GrowlDemo-Info.plist306523311#306523311#0(0"0(0#0#69"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemo-Info.plist12948325677203556#515"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility GrowlDemo-Info.plist -genpkginfo /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app/Info.plist0#
+
+CProcessPCH /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch.gch GrowlDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s306523312.259593
+e306523312.967859
+r1
+xProcessPCH
+x/var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch.gch
+xGrowlDemo_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile GrowlDemo_Prefix.pch306523312#306523312#0(0"0(0#0#69"/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemo_Prefix.pch8905412448#1944"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-generated-files.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-own-target-headers.hmap -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-all-target-headers.hmap -iquote /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/GrowlDemo-project-headers.hmap -F/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/include -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources/i386 -I/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/GrowlDemo.build/Debug-iphonesimulator/GrowlDemo.build/DerivedSources -c /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemo_Prefix.pch -o /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-azfrdsrhzimpqlggtoetbncjrpwa/GrowlDemo_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/8o/8obUVHhqE-0P+Z+TU5qQdU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/GrowlDemo_Prefix-blnpmwghupuytjbdxzyeuwtkmqmi/GrowlDemo_Prefix.pch.gch GrowlDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s279183312.751971
@@ -341,4 +648,12 @@ r1
 xTouch
 x/Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app
 lSLF07#2@86"Touch /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app279183645#279183645#0(0"0(0#0#0"4300885448#280"    cd /Users/zsombor/Documents/dev/GrowlDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/zsombor/Documents/dev/GrowlDemo/build/Debug-iphonesimulator/GrowlDemo.app0#
+
+CTouch /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app
+s306523359.963746
+e306523359.966451
+r1
+xTouch
+x/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app
+lSLF07#2@96"Touch /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app306523359#306523359#0(0"0(0#0#0"8932589632#300"    cd /Users/zsombor/dev/IZGrowlManager/IZGrowlManager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug-iphonesimulator/GrowlDemo.app0#
 

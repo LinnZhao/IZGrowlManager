@@ -1,0 +1,87 @@
+TGrowlDemo
+v7
+r1
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib
+c000000004C94F38C000000000000467D
+t1284830092
+s18045
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib
+c000000004C94F38C0000000000002464
+t1284830092
+s9316
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Info.plist
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Resources/GrowlDemoViewController.nib
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Resources/growl-box-highlighted.png
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Resources/growl-box.png
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Resources/growl-close-button.png
+t2
+s0
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box-highlighted.png
+c000000004C94F38C0000000000000E24
+t1284830092
+s3620
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-box.png
+c000000004C94F38C0000000000000CCB
+t1284830092
+s3275
+
+N/Users/zsombor/dev/IZGrowlManager/IZGrowlManager/growl-close-button.png
+c000000004C94F38C0000000000000EE6
+t1284830092
+s3814
+
+NGrowlDemo-Info.plist
+c000000004C94F38C000000000000038D
+t1284830092
+s909
+
+CCompileXIB /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/GrowlDemoViewController.xib
+r0
+
+CCompileXIB /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/MainWindow.xib
+r0
+
+CCpResource build/Debug/GrowlDemo.app/Contents/Resources/growl-box-highlighted.png growl-box-highlighted.png
+r0
+
+CCpResource build/Debug/GrowlDemo.app/Contents/Resources/growl-box.png growl-box.png
+r0
+
+CCpResource build/Debug/GrowlDemo.app/Contents/Resources/growl-close-button.png growl-close-button.png
+r0
+
+CProcessInfoPlistFile /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app/Contents/Info.plist GrowlDemo-Info.plist
+r0
+
+CTouch /Users/zsombor/dev/IZGrowlManager/IZGrowlManager/build/Debug/GrowlDemo.app
+r0
+

@@ -19,6 +19,7 @@
 		2D66931B10A3FF3200FC0FD3 /* growl-close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66931810A3FF3200FC0FD3 /* growl-close-button.png */; };
 		2D66931C10A3FF3200FC0FD3 /* growl-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66931910A3FF3200FC0FD3 /* growl-box.png */; };
 		2D66931D10A3FF3200FC0FD3 /* growl-box-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66931A10A3FF3200FC0FD3 /* growl-box-highlighted.png */; };
+		2DC8428512452C830070AF15 /* information-symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC8428412452C830070AF15 /* information-symbol.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2D66931810A3FF3200FC0FD3 /* growl-close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "growl-close-button.png"; sourceTree = "<group>"; };
 		2D66931910A3FF3200FC0FD3 /* growl-box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "growl-box.png"; sourceTree = "<group>"; };
 		2D66931A10A3FF3200FC0FD3 /* growl-box-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "growl-box-highlighted.png"; sourceTree = "<group>"; };
+		2DC8428412452C830070AF15 /* information-symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information-symbol.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GrowlDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDemo_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GrowlDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GrowlDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2DC8428412452C830070AF15 /* information-symbol.png */,
 				2D66931810A3FF3200FC0FD3 /* growl-close-button.png */,
 				2D66931910A3FF3200FC0FD3 /* growl-box.png */,
 				2D66931A10A3FF3200FC0FD3 /* growl-box-highlighted.png */,
@@ -148,7 +151,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GrowlDemo" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,6 +178,7 @@
 				2D66931B10A3FF3200FC0FD3 /* growl-close-button.png in Resources */,
 				2D66931C10A3FF3200FC0FD3 /* growl-box.png in Resources */,
 				2D66931D10A3FF3200FC0FD3 /* growl-box-highlighted.png in Resources */,
+				2DC8428512452C830070AF15 /* information-symbol.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +234,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
