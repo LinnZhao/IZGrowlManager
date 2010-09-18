@@ -30,8 +30,8 @@
 	28D7ACF70DDB3853001CB0EB /* GrowlDemoViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {922, 1408}}";
-			sepNavSelRange = "{1541, 0}";
-			sepNavVisRange = "{1257, 1050}";
+			sepNavSelRange = "{1365, 0}";
+			sepNavVisRange = "{1254, 1053}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -97,6 +97,7 @@
 			2DC8429812452CE00070AF15 /* PBXTextBookmark */ = 2DC8429812452CE00070AF15 /* PBXTextBookmark */;
 			2DC8429912452CE00070AF15 /* PBXTextBookmark */ = 2DC8429912452CE00070AF15 /* PBXTextBookmark */;
 			2DC8429A12452CE00070AF15 /* PBXTextBookmark */ = 2DC8429A12452CE00070AF15 /* PBXTextBookmark */;
+			2DC8429D12452DAA0070AF15 /* PBXTextBookmark */ = 2DC8429D12452DAA0070AF15 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2D66931210A3FED900FC0FD3 /* Source Control */;
 		userBuildSettings = {
@@ -361,5 +362,15 @@
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 1257;
+	};
+	2DC8429D12452DAA0070AF15 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GrowlDemoViewController.m */;
+		name = "GrowlDemoViewController.m: 58";
+		rLen = 0;
+		rLoc = 1365;
+		rType = 0;
+		vrLen = 1053;
+		vrLoc = 1254;
 	};
 }
